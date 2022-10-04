@@ -30,6 +30,13 @@
 \setmainfont{FreeSerif}
 \setsansfont{FreeSans}
 
+\usepackage{anyfontsize}
+ % Commands
+ \newcommand{\bs}{\textbackslash}   % backslash
+ \newcommand{\cmd}[1]{{\bf \color{red}#1}}   % highlights command
+
+
+%    https://tex.stackexchange.com/questions/499066/how-to-increase-the-font-size-of-the-body-in-tikzposter
 
 % https://taipeimedicaltourism.org/en/facility/detail/43
 \author{Taipei Municipal Wanfang Hospital (Managed by Taipei Medical University}
@@ -52,8 +59,10 @@ BORDERS}
 \block{TMWH in TMU Healthcare System}{
 \begin{itemize}
 
+{\Large       %\fontsize{130}{50}
+
 With outstanding medical research and accomplishments, Taipei Medical University (TMU) has established itself as one of Asia's leading institutions for medical education. The Taipei Medical University Hospital (TMUH), \underline{Wanfang Medical Center (TMWH)}, Shuang-Ho Hospital, TMU Taipei Cancer Center, Taipei Neuroscience Institute, and TMU LiHuiLi Hospital in Ningbo, China, are all part of the TMU Health System.
-TMU Healthcare System is better able to help medical professionals and patients in Taiwan and around the world by combining the existing clinical resources with cloud resources in their Information and Communications Technology (ICT) in medicine.\\
+%TMU Healthcare System is better able to help medical professionals and patients in Taiwan and around the world by combining the existing clinical resources with cloud resources in their Information and Communications Technology (ICT) in medicine.\\
 
 TMWH, as a private management of public hospital, has been operating by TMU since 1997 under the successful model of \underline{build, operation and transfer (BOT)}.
 
@@ -67,6 +76,7 @@ To help international visitors, TMWH has set up an international liaison center.
 %From the beginning, our hospital visions were, to treat patients with respect, become a center of integrative medicine and provide comprehensive care for all and provide community-oriented service. 
 As a renowned university hospital with a worldwide patients, TMWH is fully committed to offering the best service available.
 
+} % end of \fontsize or \huge
 
 %\item \#TMUtw 
 %\item \#TaipeiMedicalUniversity 
@@ -91,7 +101,15 @@ As a renowned university hospital with a worldwide patients, TMWH is fully commi
 \column{0.7}
 \block{What responsibilities does TMU have?}{
 \begin{itemize}
-TMU Spotlight showcases impressive outcomes from our partnership collaboration, research excellence, talent development, and the University’s commitment to making a positive social impact.
+TMU Spotlight showcases impressive outcomes from our partnership collaboration, research excellence, talent development, and the University’s commitment to making a positive social impact.\\
+\underline{Humanity, integrity, innovation, teamwork, and service} are among TMU's core values.
+% 核心價值
+%　人文關懷(Humanity)        ：以人為本，尊重生命，厚植人文與專業教育。
+%　誠信正直(Integrity)          ：誠實為上，正直當責，堅持互信的組織文化。
+%　創新卓越(Innovation)      ：勇於創新，承擔風險，追求卓越以引領時代。
+%　團隊合作(Collaboration) ：尊重多元，跨域協作，共創永續發展的目標。
+%　社會服務(Service)            ：熱忱服務，影響社會，促進人類健康與福祉。
+ 
 
 %\item We try to do this. what?
 %\item we try to do that.
@@ -100,10 +118,13 @@ TMU Spotlight showcases impressive outcomes from our partnership collaboration, 
 \innerblock{TMU's Hospitals}{
 % Figures of TMU
 \begin{minipage}{0.45\linewidth}
-  \centering
+  \centering %456
     \begin{tikzfigure}[]
-    \includegraphics[width=0.8\linewidth]{TMU123.jpg}
-%\includegraphics[width=0.5\linewidth]{TMU456.jpg}
+    % TMWH
+    \includegraphics[width=0.8\linewidth]{5FAB9DAB-B258-4FC5-AED2-BB8F415E616F.jpeg}
+    % TMUH
+    \includegraphics[width=0.8\linewidth]{5782F8B7-D58E-4601-A26D-18DFB462B6B8.jpeg}
+    \includegraphics[width=0.8\linewidth]{10885B17-3876-4B24-B689-4B1ACDB21AB3.jpeg}
     \end{tikzfigure}
 \end{minipage}\hfill
 \begin{minipage}{0.45\linewidth}
@@ -111,8 +132,10 @@ TMU Spotlight showcases impressive outcomes from our partnership collaboration, 
 %\innerblock{TMU's Hospitals}{
     \begin{tikzfigure}[]
     %\includegraphics[width=0.5\linewidth]{TMU123.jpg}
-    \includegraphics[width=0.6\linewidth]{TMU456.jpg}
-    \end{tikzfigure}
+    \includegraphics[width=0.85\linewidth]{295B6224-4030-47C6-9742-E3874C20445E.jpeg}
+    \includegraphics[width=0.85\linewidth]{6C597AEE-0ADA-4AC1-BA50-C500B9B911E0.jpeg}
+    \includegraphics[width=0.85\linewidth]{17E0CB16-55CA-4F23-9A3A-F70CAE5FE133.jpeg}
+\end{tikzfigure}
 \end{minipage}
 } % end of innerblock
 
@@ -168,7 +191,7 @@ urology, obstetrics & gynecology, general surgery (thyroid, breast), colorectal 
 \begin{minipage}{0.45\linewidth}
   \centering
 \begin{tikzfigure}[]
-\includegraphics[width=\linewidth]{TMUH_pe2.pdf}
+\includegraphics[width=\linewidth]{3雙和醫院中英文照片.jpeg}
 \end{tikzfigure}
 \end{minipage}
 
@@ -186,7 +209,7 @@ urology, obstetrics & gynecology, general surgery (thyroid, breast), colorectal 
 \begin{minipage}{0.3\linewidth}
   \centering
 \begin{tikzfigure}[]
-\includegraphics[width=\linewidth]{TMWH_scope.jpg}
+\includegraphics[width=\linewidth]{2萬芳醫院中英文簡介照片.jpg}
 \end{tikzfigure}  
 \end{minipage}\hfill
 \begin{minipage}{0.3\linewidth}
